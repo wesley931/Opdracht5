@@ -34,7 +34,7 @@
                 </td>
                 <td class="auto-style4">
                     *<asp:RequiredFieldValidator ID="rfvGetal1" runat="server" ControlToValidate="txtGetal1" ErrorMessage="Vul getal 1 in!"></asp:RequiredFieldValidator>
-                    <asp:RangeValidator ID="rvGetal1" runat="server" ControlToValidate="txtGetal1" ErrorMessage="Tussen de 1 en 100!"></asp:RangeValidator>
+                    <asp:RangeValidator ID="rvGetal1" runat="server" ControlToValidate="txtGetal1" ErrorMessage="Tussen de 1 en 100!" MaximumValue="100" MinimumValue="1" Type="Integer"></asp:RangeValidator>
                 </td>
                 <td class="auto-style3">
                     <asp:Button ID="btnOptel" runat="server" OnClick="btnOptel_Click" Text="Optellen" />
